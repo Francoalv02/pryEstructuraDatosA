@@ -162,25 +162,7 @@ namespace pryEstructuraDatos
                 }
             }
         }
-        public void Buscar(Int32 Codigo)
-        {
-                ClsNodo Buscar = Raiz;
-
-            while (Buscar.Codigo != Codigo)
-            {
-                if (Codigo < Buscar.Codigo)
-                {
-                    Buscar = Buscar.Izquierdo;
-                }
-                else
-                {
-                    Buscar = Buscar.Derecho;
-                }
-            }
-            Nombre = Buscar.Nombre;
-            Tramite = Buscar.Tramite;
-
-        }
+        
 
 
         private ClsNodo[] Vec = new ClsNodo[100];

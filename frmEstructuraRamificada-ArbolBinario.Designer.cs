@@ -50,26 +50,17 @@
             this.Tramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grp = new System.Windows.Forms.GroupBox();
             this.rbInOrdenAsc = new System.Windows.Forms.RadioButton();
+            this.btnOrdenarArbol = new System.Windows.Forms.Button();
             this.rbInOrdenDesc = new System.Windows.Forms.RadioButton();
             this.rbPostOrden = new System.Windows.Forms.RadioButton();
             this.rbPreOrden = new System.Windows.Forms.RadioButton();
-            this.btnOrdenarArbol = new System.Windows.Forms.Button();
             this.tvArbol = new System.Windows.Forms.TreeView();
-            this.cbBuscarCodigo = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblNombreBuscar = new System.Windows.Forms.Label();
-            this.txtBuscarNombre = new System.Windows.Forms.TextBox();
-            this.lblTramiteBuscar = new System.Windows.Forms.Label();
-            this.txtBuscarTramite = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnBusacrElemento = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picRepresentacionEnlazada)).BeginInit();
             this.grpElementoEliminado.SuspendLayout();
             this.groNuevoElemento.SuspendLayout();
             this.groSecundario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).BeginInit();
             this.grp.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // picRepresentacionEnlazada
@@ -87,9 +78,9 @@
             this.grpElementoEliminado.Controls.Add(this.lblCodigoEE);
             this.grpElementoEliminado.Controls.Add(this.cbCodigoEE);
             this.grpElementoEliminado.Controls.Add(this.btnEliminar);
-            this.grpElementoEliminado.Location = new System.Drawing.Point(726, 12);
+            this.grpElementoEliminado.Location = new System.Drawing.Point(511, 79);
             this.grpElementoEliminado.Name = "grpElementoEliminado";
-            this.grpElementoEliminado.Size = new System.Drawing.Size(244, 115);
+            this.grpElementoEliminado.Size = new System.Drawing.Size(209, 115);
             this.grpElementoEliminado.TabIndex = 16;
             this.grpElementoEliminado.TabStop = false;
             this.grpElementoEliminado.Text = " Elementos Eliminados";
@@ -253,7 +244,7 @@
             this.grp.Size = new System.Drawing.Size(693, 65);
             this.grp.TabIndex = 7;
             this.grp.TabStop = false;
-            this.grp.Text = "Sistemas de Ordenamiento";
+            this.grp.Text = "Seleccione un Sistema de Ordenamiento";
             // 
             // rbInOrdenAsc
             // 
@@ -266,6 +257,16 @@
             this.rbInOrdenAsc.Text = "InOrdenAsc";
             this.rbInOrdenAsc.UseVisualStyleBackColor = true;
             this.rbInOrdenAsc.CheckedChanged += new System.EventHandler(this.rbInOrdenAsc_CheckedChanged);
+            // 
+            // btnOrdenarArbol
+            // 
+            this.btnOrdenarArbol.Location = new System.Drawing.Point(510, 10);
+            this.btnOrdenarArbol.Name = "btnOrdenarArbol";
+            this.btnOrdenarArbol.Size = new System.Drawing.Size(158, 49);
+            this.btnOrdenarArbol.TabIndex = 18;
+            this.btnOrdenarArbol.Text = "Ordenar Arbol";
+            this.btnOrdenarArbol.UseVisualStyleBackColor = true;
+            this.btnOrdenarArbol.Click += new System.EventHandler(this.btnOrdenarArbol_Click);
             // 
             // rbInOrdenDesc
             // 
@@ -303,98 +304,12 @@
             this.rbPreOrden.UseVisualStyleBackColor = true;
             this.rbPreOrden.CheckedChanged += new System.EventHandler(this.rbPreOrden_CheckedChanged);
             // 
-            // btnOrdenarArbol
-            // 
-            this.btnOrdenarArbol.Location = new System.Drawing.Point(510, 10);
-            this.btnOrdenarArbol.Name = "btnOrdenarArbol";
-            this.btnOrdenarArbol.Size = new System.Drawing.Size(158, 49);
-            this.btnOrdenarArbol.TabIndex = 18;
-            this.btnOrdenarArbol.Text = "Ordenar Arbol";
-            this.btnOrdenarArbol.UseVisualStyleBackColor = true;
-            this.btnOrdenarArbol.Click += new System.EventHandler(this.btnOrdenarArbol_Click);
-            // 
             // tvArbol
             // 
-            this.tvArbol.Location = new System.Drawing.Point(726, 139);
+            this.tvArbol.Location = new System.Drawing.Point(726, 12);
             this.tvArbol.Name = "tvArbol";
-            this.tvArbol.Size = new System.Drawing.Size(244, 371);
+            this.tvArbol.Size = new System.Drawing.Size(244, 498);
             this.tvArbol.TabIndex = 20;
-            // 
-            // cbBuscarCodigo
-            // 
-            this.cbBuscarCodigo.FormattingEnabled = true;
-            this.cbBuscarCodigo.Location = new System.Drawing.Point(70, 32);
-            this.cbBuscarCodigo.Name = "cbBuscarCodigo";
-            this.cbBuscarCodigo.Size = new System.Drawing.Size(121, 21);
-            this.cbBuscarCodigo.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Codigo:";
-            // 
-            // lblNombreBuscar
-            // 
-            this.lblNombreBuscar.AutoSize = true;
-            this.lblNombreBuscar.Location = new System.Drawing.Point(13, 78);
-            this.lblNombreBuscar.Name = "lblNombreBuscar";
-            this.lblNombreBuscar.Size = new System.Drawing.Size(47, 13);
-            this.lblNombreBuscar.TabIndex = 8;
-            this.lblNombreBuscar.Text = "Nombre:";
-            // 
-            // txtBuscarNombre
-            // 
-            this.txtBuscarNombre.Location = new System.Drawing.Point(70, 75);
-            this.txtBuscarNombre.Name = "txtBuscarNombre";
-            this.txtBuscarNombre.Size = new System.Drawing.Size(121, 20);
-            this.txtBuscarNombre.TabIndex = 9;
-            // 
-            // lblTramiteBuscar
-            // 
-            this.lblTramiteBuscar.AutoSize = true;
-            this.lblTramiteBuscar.Location = new System.Drawing.Point(15, 117);
-            this.lblTramiteBuscar.Name = "lblTramiteBuscar";
-            this.lblTramiteBuscar.Size = new System.Drawing.Size(45, 13);
-            this.lblTramiteBuscar.TabIndex = 10;
-            this.lblTramiteBuscar.Text = "Tramite:";
-            // 
-            // txtBuscarTramite
-            // 
-            this.txtBuscarTramite.Location = new System.Drawing.Point(70, 114);
-            this.txtBuscarTramite.Name = "txtBuscarTramite";
-            this.txtBuscarTramite.Size = new System.Drawing.Size(121, 20);
-            this.txtBuscarTramite.TabIndex = 11;
-            this.txtBuscarTramite.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btnBusacrElemento);
-            this.groupBox1.Controls.Add(this.txtBuscarTramite);
-            this.groupBox1.Controls.Add(this.lblTramiteBuscar);
-            this.groupBox1.Controls.Add(this.txtBuscarNombre);
-            this.groupBox1.Controls.Add(this.lblNombreBuscar);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.cbBuscarCodigo);
-            this.groupBox1.Location = new System.Drawing.Point(503, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(208, 229);
-            this.groupBox1.TabIndex = 19;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Buscar Elementos ";
-            // 
-            // btnBusacrElemento
-            // 
-            this.btnBusacrElemento.Location = new System.Drawing.Point(25, 164);
-            this.btnBusacrElemento.Name = "btnBusacrElemento";
-            this.btnBusacrElemento.Size = new System.Drawing.Size(158, 49);
-            this.btnBusacrElemento.TabIndex = 12;
-            this.btnBusacrElemento.Text = "Buscar";
-            this.btnBusacrElemento.UseVisualStyleBackColor = true;
-            this.btnBusacrElemento.Click += new System.EventHandler(this.btnBusacrElemento_Click);
             // 
             // frmEstructuraRamificada_ArbolBinario
             // 
@@ -403,7 +318,6 @@
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(983, 535);
             this.Controls.Add(this.tvArbol);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grp);
             this.Controls.Add(this.picRepresentacionEnlazada);
             this.Controls.Add(this.grpElementoEliminado);
@@ -421,8 +335,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).EndInit();
             this.grp.ResumeLayout(false);
             this.grp.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -454,13 +366,5 @@
         private System.Windows.Forms.Button btnOrdenarArbol;
         private System.Windows.Forms.RadioButton rbInOrdenAsc;
         private System.Windows.Forms.TreeView tvArbol;
-        private System.Windows.Forms.ComboBox cbBuscarCodigo;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblNombreBuscar;
-        private System.Windows.Forms.TextBox txtBuscarNombre;
-        private System.Windows.Forms.Label lblTramiteBuscar;
-        private System.Windows.Forms.TextBox txtBuscarTramite;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnBusacrElemento;
     }
 }

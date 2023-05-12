@@ -141,19 +141,7 @@ namespace pryEstructuraDatos
 
         private void btnBusacrElemento_Click(object sender, EventArgs e)
         {
-            ClsNodo objNodo = new ClsNodo();
-            if (txtCodigo.Text != "")
-            {
-                Int32 Buscar = Convert.ToInt32(cbBuscarCodigo.Text);
-                objArbol.Buscar(Buscar);
-                txtBuscarNombre.Text = objArbol.Nombre;
-                txtBuscarTramite.Text = objArbol.Tramite;
-            }
-            else
-            {
-                txtBuscarTramite.Text = "";
-                txtBuscarNombre.Text = "";
-            }
+           
         }
 
         private void btnOrdenarArbol_Click(object sender, EventArgs e)
