@@ -111,5 +111,17 @@ namespace pryEstructuraDatos
         {
 
         }
+
+        private void baseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Operaciones_De_Base_De_Datos ars = new Operaciones_De_Base_De_Datos();
+            ars.Show();
+        }
+
+        private void consultaBDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaBaseDeDatos ae = new frmConsultaBaseDeDatos();
+            ae.Show();
+        }
     }
 }

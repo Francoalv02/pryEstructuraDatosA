@@ -42,11 +42,13 @@
             this.noLinealesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.arbolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grafoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.baseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datosDelProgramadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.docenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.consultaBDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -62,7 +64,7 @@
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(332, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(404, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -70,7 +72,9 @@
             // sistemasToolStripMenuItem
             // 
             this.sistemasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.linealesToolStripMenuItem});
+            this.linealesToolStripMenuItem,
+            this.baseDeDatosToolStripMenuItem,
+            this.consultaBDToolStripMenuItem});
             this.sistemasToolStripMenuItem.Name = "sistemasToolStripMenuItem";
             this.sistemasToolStripMenuItem.Size = new System.Drawing.Size(36, 20);
             this.sistemasToolStripMenuItem.Text = "E.D";
@@ -92,7 +96,7 @@
             this.pilaToolStripMenuItem,
             this.listaEnlazadaToolStripMenuItem});
             this.linealesToolStripMenuItem1.Name = "linealesToolStripMenuItem1";
-            this.linealesToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.linealesToolStripMenuItem1.Size = new System.Drawing.Size(135, 22);
             this.linealesToolStripMenuItem1.Text = "Lineales";
             // 
             // colaToolStripMenuItem
@@ -138,22 +142,29 @@
             this.arbolToolStripMenuItem,
             this.grafoToolStripMenuItem});
             this.noLinealesToolStripMenuItem1.Name = "noLinealesToolStripMenuItem1";
-            this.noLinealesToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.noLinealesToolStripMenuItem1.Size = new System.Drawing.Size(135, 22);
             this.noLinealesToolStripMenuItem1.Text = "No Lineales";
             // 
             // arbolToolStripMenuItem
             // 
             this.arbolToolStripMenuItem.Name = "arbolToolStripMenuItem";
-            this.arbolToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.arbolToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.arbolToolStripMenuItem.Text = "Arbol";
             this.arbolToolStripMenuItem.Click += new System.EventHandler(this.arbolToolStripMenuItem_Click);
             // 
             // grafoToolStripMenuItem
             // 
             this.grafoToolStripMenuItem.Name = "grafoToolStripMenuItem";
-            this.grafoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.grafoToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.grafoToolStripMenuItem.Text = "Grafo";
             this.grafoToolStripMenuItem.Click += new System.EventHandler(this.grafoToolStripMenuItem_Click);
+            // 
+            // baseDeDatosToolStripMenuItem
+            // 
+            this.baseDeDatosToolStripMenuItem.Name = "baseDeDatosToolStripMenuItem";
+            this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.baseDeDatosToolStripMenuItem.Text = "BaseDeDatos";
+            this.baseDeDatosToolStripMenuItem.Click += new System.EventHandler(this.baseDeDatosToolStripMenuItem_Click);
             // 
             // datosDelProgramadorToolStripMenuItem
             // 
@@ -189,17 +200,24 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(336, 263);
+            this.pictureBox1.Size = new System.Drawing.Size(449, 293);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // consultaBDToolStripMenuItem
+            // 
+            this.consultaBDToolStripMenuItem.Name = "consultaBDToolStripMenuItem";
+            this.consultaBDToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.consultaBDToolStripMenuItem.Text = "Consulta en la Base de Datos";
+            this.consultaBDToolStripMenuItem.Click += new System.EventHandler(this.consultaBDToolStripMenuItem_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 285);
+            this.ClientSize = new System.Drawing.Size(404, 315);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -233,6 +251,8 @@
         private System.Windows.Forms.ToolStripMenuItem listaEnlazadaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem simpleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dobleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem baseDeDatosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultaBDToolStripMenuItem;
     }
 }
 

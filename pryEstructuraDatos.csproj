@@ -62,11 +62,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsArbolBinario.cs" />
+    <Compile Include="clsBaseDatos.cs" />
     <Compile Include="ClsCola.cs" />
     <Compile Include="clsListaDoble.cs" />
     <Compile Include="ClsListaSimple.cs" />
     <Compile Include="ClsNodo.cs" />
     <Compile Include="ClsPila.cs" />
+    <Compile Include="frmConsultaBaseDeDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaBaseDeDatos.Designer.cs">
+      <DependentUpon>frmConsultaBaseDeDatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDatosProgramador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,8 +122,17 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Operaciones_De_Base_De_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operaciones_De_Base_De_Datos.Designer.cs">
+      <DependentUpon>Operaciones_De_Base_De_Datos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmConsultaBaseDeDatos.resx">
+      <DependentUpon>frmConsultaBaseDeDatos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDatosProgramador.resx">
       <DependentUpon>frmDatosProgramador.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operaciones_De_Base_De_Datos.resx">
+      <DependentUpon>Operaciones_De_Base_De_Datos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
