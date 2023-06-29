@@ -155,6 +155,7 @@ namespace pryEstructuraDatos
             this.btnInterseccion.TabIndex = 2;
             this.btnInterseccion.Text = "Interseccion";
             this.btnInterseccion.UseVisualStyleBackColor = true;
+            this.btnInterseccion.Click += new System.EventHandler(this.btnInterseccion_Click);
             // 
             // btnDiferencia
             // 

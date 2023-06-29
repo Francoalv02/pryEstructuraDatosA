@@ -68,6 +68,12 @@
     <Compile Include="ClsListaSimple.cs" />
     <Compile Include="ClsNodo.cs" />
     <Compile Include="ClsPila.cs" />
+    <Compile Include="frmConsulBaseDeDatosPorOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsulBaseDeDatosPorOperaciones.Designer.cs">
+      <DependentUpon>frmConsulBaseDeDatosPorOperaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultaBaseDeDatos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmConsulBaseDeDatosPorOperaciones.resx">
+      <DependentUpon>frmConsulBaseDeDatosPorOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaBaseDeDatos.resx">
       <DependentUpon>frmConsultaBaseDeDatos.cs</DependentUpon>
     </EmbeddedResource>

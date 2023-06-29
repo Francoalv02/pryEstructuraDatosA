@@ -55,7 +55,12 @@ namespace pryEstructuraDatos
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            objBaseDatos = new clsBaseDatos();
+            String varSql = "Select * from libro " +
+                " where IdIdioma=3 and IdLibro not in " +
+                " (Select IdLibro from libro where IdPais =2 )" +
+                " order by 1 asc ";
+            objBaseDatos.Listar(dataGridView1, varSql);
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -74,10 +79,11 @@ namespace pryEstructuraDatos
 
         private void button5_Click(object sender, EventArgs e)
         {
-            string varSQL = "SELECT * " +
-                "FROM (select * from libro where idIdioma > 1 ) as x " +
-                "WHUERE IDIDIOMA = 1 " +
-                "ORDEN BY TITULO ";
+            objBaseDatos = new clsBaseDatos();
+            String varSql = "Select *" +
+                " FROM (Select * from libro where IdIdioma > 1) as X " +
+                "WHERE IdPais = 2 ";
+            objBaseDatos.Listar(dataGridView1, varSql);
         }
 
         private void grbAlgebraicas_Enter(object sender, EventArgs e)
@@ -87,15 +93,28 @@ namespace pryEstructuraDatos
 
         private void btnSeleccionMultiatributos_Click(object sender, EventArgs e)
         {
-            string varSQL = "Select * " +
-                "from libro " +
-                "where IdLibro > 30 and IdIdioma= 1";
+            objBaseDatos = new clsBaseDatos();
+            String varSQL = "SELECT * FROM Libro WHERE IdLibro = 2 AND IdAutor > 1";
             objBaseDatos.Listar(dataGridView1, varSQL);
         }
 
         private void btnUnion_Click(object sender, EventArgs e)
         {
+            objBaseDatos = new clsBaseDatos();
+            String varSQL = " SELECT * FROM Libro WHERE IdIdioma = 2 " +
+                " union " +
+                " SELECT * FROM Libro where IdIdioma = 3 ";
+            objBaseDatos.Listar(dataGridView1, varSQL);
+        }
 
+        private void btnInterseccion_Click(object sender, EventArgs e)
+        {
+            objBaseDatos = new clsBaseDatos();
+            String varSql = "Select * from libro " +
+                 " where IdIdioma=3 and IdLibro in " +
+                 " (Select IdLibro from libro where IdPais =2 )" +
+                 " order by 1 asc ";
+            objBaseDatos.Listar(dataGridView1, varSql);
         }
     }
 }

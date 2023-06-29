@@ -123,5 +123,11 @@ namespace pryEstructuraDatos
             frmConsultaBaseDeDatos ae = new frmConsultaBaseDeDatos();
             ae.Show();
         }
+
+        private void consultaBaseDeDatosPorOperacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsulBaseDeDatosPorOperaciones aa = new frmConsulBaseDeDatosPorOperaciones();
+            aa.Show();
+        }
     }
 }

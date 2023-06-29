@@ -43,12 +43,13 @@
             this.arbolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grafoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.baseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaBDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datosDelProgramadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.docenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.consultaBDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaBaseDeDatosPorOperacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -74,7 +75,8 @@
             this.sistemasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.linealesToolStripMenuItem,
             this.baseDeDatosToolStripMenuItem,
-            this.consultaBDToolStripMenuItem});
+            this.consultaBDToolStripMenuItem,
+            this.consultaBaseDeDatosPorOperacionesToolStripMenuItem});
             this.sistemasToolStripMenuItem.Name = "sistemasToolStripMenuItem";
             this.sistemasToolStripMenuItem.Size = new System.Drawing.Size(36, 20);
             this.sistemasToolStripMenuItem.Text = "E.D";
@@ -86,7 +88,7 @@
             this.linealesToolStripMenuItem1,
             this.noLinealesToolStripMenuItem1});
             this.linealesToolStripMenuItem.Name = "linealesToolStripMenuItem";
-            this.linealesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.linealesToolStripMenuItem.Size = new System.Drawing.Size(287, 22);
             this.linealesToolStripMenuItem.Text = "Sistemas";
             // 
             // linealesToolStripMenuItem1
@@ -162,9 +164,16 @@
             // baseDeDatosToolStripMenuItem
             // 
             this.baseDeDatosToolStripMenuItem.Name = "baseDeDatosToolStripMenuItem";
-            this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(287, 22);
             this.baseDeDatosToolStripMenuItem.Text = "BaseDeDatos";
             this.baseDeDatosToolStripMenuItem.Click += new System.EventHandler(this.baseDeDatosToolStripMenuItem_Click);
+            // 
+            // consultaBDToolStripMenuItem
+            // 
+            this.consultaBDToolStripMenuItem.Name = "consultaBDToolStripMenuItem";
+            this.consultaBDToolStripMenuItem.Size = new System.Drawing.Size(287, 22);
+            this.consultaBDToolStripMenuItem.Text = "Consulta en la Base de Datos";
+            this.consultaBDToolStripMenuItem.Click += new System.EventHandler(this.consultaBDToolStripMenuItem_Click);
             // 
             // datosDelProgramadorToolStripMenuItem
             // 
@@ -206,12 +215,12 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // consultaBDToolStripMenuItem
+            // consultaBaseDeDatosPorOperacionesToolStripMenuItem
             // 
-            this.consultaBDToolStripMenuItem.Name = "consultaBDToolStripMenuItem";
-            this.consultaBDToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
-            this.consultaBDToolStripMenuItem.Text = "Consulta en la Base de Datos";
-            this.consultaBDToolStripMenuItem.Click += new System.EventHandler(this.consultaBDToolStripMenuItem_Click);
+            this.consultaBaseDeDatosPorOperacionesToolStripMenuItem.Name = "consultaBaseDeDatosPorOperacionesToolStripMenuItem";
+            this.consultaBaseDeDatosPorOperacionesToolStripMenuItem.Size = new System.Drawing.Size(287, 22);
+            this.consultaBaseDeDatosPorOperacionesToolStripMenuItem.Text = "Consulta Base de Datos Por Operaciones";
+            this.consultaBaseDeDatosPorOperacionesToolStripMenuItem.Click += new System.EventHandler(this.consultaBaseDeDatosPorOperacionesToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -253,6 +262,7 @@
         private System.Windows.Forms.ToolStripMenuItem dobleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem baseDeDatosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaBDToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultaBaseDeDatosPorOperacionesToolStripMenuItem;
     }
 }
 
